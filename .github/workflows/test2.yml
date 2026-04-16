@@ -1,0 +1,15 @@
+name: GitHub action dummy
+run-name: ${{ github.actor }} is running you code and testing 
+on: [push]
+jobs:
+  github-actions-explore: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "app is starting and booting to machine"
+      - run: echo "app s copied to the github workflow"
+      - name: Check out repository 
+        uses: actions/checkout@v4
+      - run: echo "code is clonned to github worspacce"
+      - name: list files in repository
+        run: ls ${{ github.workspace }}
+      - run: echo "code is copied to the user machine"
