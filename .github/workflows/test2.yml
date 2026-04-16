@@ -4,7 +4,7 @@ on: [push]
 jobs:
   github-actions-explore: 
     runs-on: ubuntu-latest
-    steps:sds  
+    steps:
       - run: echo "app is starting and booting to machine"
       - run: echo "app s copied to the github workflow"
       - name: Check out repository 
